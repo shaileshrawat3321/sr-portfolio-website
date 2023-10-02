@@ -26,7 +26,7 @@ const AboutPage = () => {
         },
         {
             id: 4,
-            done: "BACHELOR OF SCIENCE (B.Sc)",
+            done: "BACHELOR OF SCIENCE(Non-med.)",
             timeline: "AUG 2017 - OCT 2020",
             place: "Post Graduate Govt. College Sec-11, Chandigarh",
             desc: "I done my UG degree in science from Post Graduate Govt. College."
@@ -56,7 +56,7 @@ const AboutPage = () => {
                         aboutMe.map(({ id, done, timeline, place, desc }) => (
                             <div className="xl:w-1/3 md:w-1/2 p-4" key={id}>
                                 <div className="border border-rangZero p-6 rounded-lg md:h-80 text-center shadow-lg bg-rangTwo">
-                                    <h2 className="text-lg text-gray-900 title-font mb-2 font-bold underline underline-offset-2 tracking-wider">{done}</h2>
+                                    <h2 className="text-lg text-gray-900 title-font mb-2 font-bold underline underline-offset-2 tracking-wide">{done}</h2>
                                     <p className='leading-relaxed text-rangTwo '>{timeline}</p>
                                     <p className='leading-relaxed text-rangFour'>FROM: {place}</p>
                                     <p className="leading-relaxed text-base text-rangZero">

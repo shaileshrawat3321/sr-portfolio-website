@@ -1,6 +1,6 @@
 import myPic from '../assets/my-pic-blue.jpg'
 import { Link } from 'react-router-dom'
-import resumePdf from '../../public/shailesh_rawat_front-end_developer_resume.pdf'
+import resumePdf from '../resume/shailesh-rawat-front-end-developer-resume.pdf'
 const HomePage = () => {
 
     const openPDF = () => {

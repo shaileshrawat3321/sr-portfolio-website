@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Button } from "flowbite-react"
-import resumePdf from '../../public/shailesh_rawat_front-end_developer_resume.pdf'
+import resumePdf from '../resume/shailesh-rawat-front-end-developer-resume.pdf'
 const Header = () => {
 
     const openPDF = () => {
@@ -24,8 +24,13 @@ const Header = () => {
             <div className="flex md:order-2">
                 <Button
                     onClick={openPDF}
-                    className="mr-5 text-rangFour bg-rangZero hover:bg-rangFour hover:text-rangZero transition duration-150 ease-in-out font-bold">
-                    DOWNLOAD RESUME
+                    className="mr-5 text-rangFour bg-rangZero hover:bg-rangFour hover:text-rangZero transition duration-300 ease-in-out font-bold">
+                    GET RESUME
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="pl-2 w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
+                    </svg>
+
                 </Button>
                 <Navbar.Toggle />
             </div>
