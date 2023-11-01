@@ -41,25 +41,25 @@ const AboutPage = () => {
     ]
 
     return (
-        <section className="bg-rangTwo text-gray-600 body-font">
+        <section className="text-gray-600 bg-rangTwo body-font">
             <div className="container px-5 py-16 mx-auto">
-                <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 uppercase underline underline-offset-4">About Me</h1>
+                <div className="flex flex-col flex-wrap items-center w-full mb-20 text-center">
+                    <h1 className="mb-4 text-2xl font-medium text-gray-900 underline uppercase sm:text-3xl title-font underline-offset-4">About Me</h1>
 
                     {/* about me description */}
-                    <p className="lg:w-1/2 w-full leading-relaxed text-lg text-rangZero">Frontend Developer with hands-on knowledge of the latest and demanding technologies in the field of frontend development. I am <span className='text-rangFour'>passionate</span>  about creating <span className='text-rangFour'>user-centric </span>  web apps using Javascript’s famous library<span className='text-rangFour'> React.</span></p>
+                    <p className="w-full text-lg leading-relaxed lg:w-1/2 text-rangZero">Frontend Developer with hands-on knowledge of the latest and demanding technologies in the field of frontend development. I am <span className='text-rangFour'>passionate</span>  about creating <span className='text-rangFour'>user-centric </span>  web apps using <span className='text-rangFour'> ReactJS.</span></p>
                 </div>
                 <div className="flex flex-wrap -m-4">
 
                     {/* about me cards */}
                     {
                         aboutMe.map(({ id, done, timeline, place, desc }) => (
-                            <div className="xl:w-1/3 md:w-1/2 p-4" key={id}>
-                                <div className="border border-rangZero p-6 rounded-lg md:h-80 text-center shadow-lg bg-rangTwo">
-                                    <h2 className="text-lg text-gray-900 title-font mb-2 font-bold underline underline-offset-2 tracking-wide">{done}</h2>
+                            <div className="p-4 xl:w-1/3 md:w-1/2" key={id}>
+                                <div className="p-6 text-center border rounded-lg shadow-lg border-rangZero md:h-80 bg-rangTwo">
+                                    <h2 className="mb-2 text-lg font-bold tracking-wide text-gray-900 underline title-font underline-offset-2">{done}</h2>
                                     <p className='leading-relaxed text-rangTwo '>{timeline}</p>
                                     <p className='leading-relaxed text-rangFour'>FROM: {place}</p>
-                                    <p className="leading-relaxed text-base text-rangZero">
+                                    <p className="text-base leading-relaxed text-rangZero">
                                         <span className='text-rangFour'>
                                             DESCRIPTION:&nbsp;
                                         </span>

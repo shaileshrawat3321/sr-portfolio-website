@@ -4,7 +4,7 @@ const SkillsPage = () => {
         {
             id: 0,
             tech: "java",
-            lvl: "intermediate"
+            lvl: "beginner"
         },
         {
             id: 1,
@@ -38,44 +38,39 @@ const SkillsPage = () => {
         },
         {
             id: 7,
+            tech: "git",
+            lvl: "intermediate"
+        },
+        {
+            id: 8,
             tech: "node js",
             lvl: "beginner"
         },
         {
-            id: 8,
+            id: 9,
             tech: "express js",
             lvl: "beginner"
         },
         {
-            id: 9,
+            id: 10,
             tech: "mongodb",
             lvl: "beginner"
         },
-        {
-            id: 10,
-            tech: "mysql",
-            lvl: "beginner"
-        },
-        {
-            id: 11,
-            tech: "firebase",
-            lvl: "beginner"
-        }
 
     ]
 
     return (
-        <section className="bg-rangTwo text-gray-600 body-font">
+        <section className="text-gray-600 bg-rangTwo body-font">
             <div className="container px-5 py-16 mx-auto">
-                <div className="flex flex-col text-center w-full mb-10">
-                    <h1 className="sm:text-4xl text-3xl font-medium title-font mb-1 text-rangFour uppercase underline underline-offset-4">Skill section</h1>
+                <div className="flex flex-col w-full mb-10 text-center">
+                    <h1 className="mb-1 text-3xl font-medium underline uppercase sm:text-4xl title-font text-rangFour underline-offset-4">Skill section</h1>
                 </div>
-                <div className="lg:w-2/3 w-full mx-auto overflow-auto">
-                    <table className="table-auto w-full text-left whitespace-no-wrap">
+                <div className="w-full mx-auto overflow-auto lg:w-2/3">
+                    <table className="w-full text-left whitespace-no-wrap table-auto">
                         <thead>
                             <tr>
-                                <th className="px-4 py-3 title-font tracking-wider text-gray-900 text-sm bg-rangZero rounded-tl rounded-bl text-center uppercase font-bold">Technologies</th>
-                                <th className="px-4 py-3 title-font tracking-wider text-rangZero text-sm bg-rangThree text-center uppercase font-bold">Skill Level</th>
+                                <th className="px-4 py-3 text-sm font-bold tracking-wider text-center text-gray-900 uppercase rounded-tl rounded-bl title-font bg-rangZero">Technologies</th>
+                                <th className="px-4 py-3 text-sm font-bold tracking-wider text-center uppercase title-font text-rangZero bg-rangThree">Skill Level</th>
                             </tr>
                         </thead>
 

@@ -4,6 +4,7 @@ import textHelper from '../assets/texthelper-unsized.png'
 import weatherMate from '../assets/weathermate.png'
 import authSystem from '../assets/authentication-system.png'
 import bingeFlix from '../assets/binge-flix.png'
+import shieldCode from '../assets/shield-code.png'
 import todX from '../assets/todX.png'
 import ottoMatic from '../assets/ottomatic.png'
 const ProjectsPage = () => {
@@ -45,6 +46,15 @@ const ProjectsPage = () => {
       hostedLink: "https://shaileshrawat3321.github.io/binge_flix/",
       githubLink: "https://github.com/shaileshrawat3321/binge_flix"
     },
+    {
+      id: 4,
+      title: 'Shield Code',
+      img: shieldCode,
+      techStack: 'React.js, React Hooks, Tailwind CSS',
+      desc: 'Shield Code is a modern random password generator, that helps in generating secure and reliable passwords that users can create and copy for future reference.',
+      hostedLink: 'https://shieldcode.netlify.app/',
+      githubLink: 'https://github.com/shaileshrawat3321/shieldcode'
+    }
   ]
 
   const upcomingProjects = [
@@ -65,7 +75,7 @@ const ProjectsPage = () => {
   ]
 
   return (
-    <section className="bg-rangTwo text-gray-600 body-font">
+    <section className="text-gray-600 bg-rangTwo body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
 
@@ -73,14 +83,14 @@ const ProjectsPage = () => {
           {
             completedProjects.map((p) => (
               <div className="p-4 md:w-1/3" key={p.id}>
-                <div className="container h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div className="container h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
                   <img src={p.img} alt="blog"
-                    className="lg:h-48 md:h-32 w-1/3 md:w-2/3 mx-auto object-cover object-center"
+                    className="object-cover object-center w-1/3 mx-auto lg:h-48 md:h-32 md:w-2/3"
                   />
                   <div className="p-6">
 
                     {/* project name */}
-                    <h1 className="title-font text-lg font-bold text-gray-900 mb-3 text-center uppercase tracking-wider underline underline-offset-4">{p.title}</h1>
+                    <h1 className="mb-3 text-lg font-bold tracking-wider text-center text-gray-900 underline uppercase title-font underline-offset-4">{p.title}</h1>
 
                     {/* project knowlegde */}
                     <h2 className="tracking-wider text-md title-font font-medium text-rangZero mb-1.5">
@@ -89,17 +99,17 @@ const ProjectsPage = () => {
                     </h2>
 
                     {/* project desc */}
-                    <p className="leading-relaxed mb-3"><span className="underline underline-offset-2">DESCRIPTION</span>: {p.desc}</p>
+                    <p className="mb-3 leading-relaxed"><span className="underline underline-offset-2">DESCRIPTION</span>: {p.desc}</p>
 
-                    <div className="flex items-end flex-wrap justify-between">
+                    <div className="flex flex-wrap items-end justify-between">
 
                       {/* project hosted link */}
                       <Link
                         to={p.hostedLink}
                         target="_blank"
-                        className="text-rangFour inline-flex items-center md:mb-2 lg:mb-0"
+                        className="inline-flex items-center text-rangFour md:mb-2 lg:mb-0"
                       >
-                        <button className="py-2 px-3 text-rangFour bg-rangZero hover:bg-rangFour hover:text-rangZero rounded-md transition duration-700 ease-in-out"> View Project
+                        <button className="px-3 py-2 transition duration-700 ease-in-out rounded-md text-rangFour bg-rangZero hover:bg-rangFour hover:text-rangZero"> View Project
                         </button>
                       </Link>
 
@@ -107,8 +117,8 @@ const ProjectsPage = () => {
                       <Link
                         to={p.githubLink}
                         target="_blank"
-                        className="text-rangFour inline-flex items-center md:mb-2 lg:mb-0">
-                        <button className="py-2 px-3 bg-rangFour text-rangZero hover:bg-rangZero hover:text-rangFour rounded-md transition duration-700 ease-in-out" >
+                        className="inline-flex items-center text-rangFour md:mb-2 lg:mb-0">
+                        <button className="px-3 py-2 transition duration-700 ease-in-out rounded-md bg-rangFour text-rangZero hover:bg-rangZero hover:text-rangFour" >
                           View Code
                         </button>
                       </Link>
@@ -123,14 +133,14 @@ const ProjectsPage = () => {
           {
             upcomingProjects.map((p) => (
               <div className="p-4 md:w-1/3" key={p.id}>
-                <div className="container h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+                <div className="container h-full overflow-hidden border-2 border-gray-200 rounded-lg border-opacity-60">
                   <img src={p.img} alt="blog"
-                    className="lg:h-48 md:h-32 w-1/3 md:w-2/3 mx-auto object-cover object-center"
+                    className="object-cover object-center w-1/3 mx-auto lg:h-48 md:h-32 md:w-2/3"
                   />
                   <div className="p-6">
 
                     {/* project name */}
-                    <h1 className="title-font text-lg font-bold text-gray-900 mb-3 text-center uppercase tracking-wider underline underline-offset-4">{p.title}</h1>
+                    <h1 className="mb-3 text-lg font-bold tracking-wider text-center text-gray-900 underline uppercase title-font underline-offset-4">{p.title}</h1>
 
                     {/* project knowlegde */}
                     <h2 className="tracking-wider text-md title-font font-medium text-rangZero mb-1.5">
@@ -139,16 +149,16 @@ const ProjectsPage = () => {
                     </h2>
 
                     {/* project desc */}
-                    <p className="leading-relaxed mb-3"><span className="underline underline-offset-2">DESCRIPTION</span>: {p.desc}</p>
+                    <p className="mb-3 leading-relaxed"><span className="underline underline-offset-2">DESCRIPTION</span>: {p.desc}</p>
 
-                    <div className="flex items-end flex-wrap justify-center">
+                    <div className="flex flex-wrap items-end justify-center">
 
                       {/* project hosted link */}
                       <Link
                         to='/projects'
-                        className="text-rangFour inline-flex items-center md:mb-2 lg:mb-0"
+                        className="inline-flex items-center text-rangFour md:mb-2 lg:mb-0"
                       >
-                        <button className="py-2 px-3 text-rangFour bg-rangZero hover:bg-rangFour hover:text-rangZero rounded-md transition duration-700 ease-in-out"> Coming Soon...
+                        <button className="px-3 py-2 transition duration-700 ease-in-out rounded-md text-rangFour bg-rangZero hover:bg-rangFour hover:text-rangZero"> Coming Soon...
                         </button>
                       </Link>
 
