@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Button } from "flowbite-react"
-import resumePdf from '../resume/shailesh-rawat-front-end-developer-resume.pdf'
+import resumePdf from '../resume/shailesh-rawat-resume.pdf'
 const Header = () => {
 
     const openPDF = () => {
@@ -13,9 +13,9 @@ const Header = () => {
             fluid
             rounded
         >
-            <Link>
+            <Link to='/'>
                 <Navbar.Brand href="https://flowbite-react.com">
-                    <span className="text-lg py-4 md:py-2 self-center whitespace-nowrap md:text-2xl font-semibold text-rangFour">
+                    <span className="self-center py-4 text-lg font-semibold md:py-2 whitespace-nowrap md:text-2xl text-rangFour">
                         SHAILESH RAWAT
                     </span>
 
@@ -24,10 +24,10 @@ const Header = () => {
             <div className="flex md:order-2">
                 <Button
                     onClick={openPDF}
-                    className="mr-5 text-rangFour bg-rangZero hover:bg-rangFour hover:text-rangZero transition duration-300 ease-in-out font-bold">
+                    className="mr-5 font-bold transition duration-300 ease-in-out text-rangFour bg-rangZero hover:bg-rangFour hover:text-rangZero">
                     GET RESUME
 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="pl-2 w-6 h-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 pl-2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 13.5L12 21m0 0l-7.5-7.5M12 21V3" />
                     </svg>
 

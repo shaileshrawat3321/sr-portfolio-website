@@ -4,7 +4,7 @@ const SkillsPage = () => {
         {
             id: 0,
             tech: "java",
-            lvl: "beginner"
+            lvl: "intermediate"
         },
         {
             id: 1,
@@ -43,17 +43,22 @@ const SkillsPage = () => {
         },
         {
             id: 8,
-            tech: "node js",
+            tech: "github",
+            lvl: "beginner"
+        },
+        {
+            id: 8,
+            tech: "mysql",
             lvl: "beginner"
         },
         {
             id: 9,
-            tech: "express js",
+            tech: "node js",
             lvl: "beginner"
         },
         {
             id: 10,
-            tech: "mongodb",
+            tech: "express js",
             lvl: "beginner"
         },
 

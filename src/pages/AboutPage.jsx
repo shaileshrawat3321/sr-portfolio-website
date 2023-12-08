@@ -42,12 +42,13 @@ const AboutPage = () => {
 
     return (
         <section className="text-gray-600 bg-rangTwo body-font">
-            <div className="container px-5 py-16 mx-auto">
-                <div className="flex flex-col flex-wrap items-center w-full mb-20 text-center">
+            <div className="container px-5 py-12 mx-auto">
+                <div className="flex flex-col flex-wrap items-center w-full mb-12 text-center">
                     <h1 className="mb-4 text-2xl font-medium text-gray-900 underline uppercase sm:text-3xl title-font underline-offset-4">About Me</h1>
 
                     {/* about me description */}
-                    <p className="w-full text-lg leading-relaxed lg:w-1/2 text-rangZero">Frontend Developer with hands-on knowledge of the latest and demanding technologies in the field of frontend development. I am <span className='text-rangFour'>passionate</span>  about creating <span className='text-rangFour'>user-centric </span>  web apps using <span className='text-rangFour'> ReactJS.</span></p>
+                    <p className="w-full text-lg leading-relaxed lg:w-1/2 text-rangZero">Hi, My name is Shailesh Rawat. I am a ReactJs Developer with hands on knowledge of the latest and demanding technologies in the field of frontend development.
+                    </p>
                 </div>
                 <div className="flex flex-wrap -m-4">
 

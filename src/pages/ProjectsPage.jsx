@@ -5,7 +5,7 @@ import weatherMate from '../assets/weathermate.png'
 import authSystem from '../assets/authentication-system.png'
 import bingeFlix from '../assets/binge-flix.png'
 import shieldCode from '../assets/shield-code.png'
-import todX from '../assets/todX.png'
+import todoX from '../assets/todX.png'
 import ottoMatic from '../assets/ottomatic.png'
 const ProjectsPage = () => {
 
@@ -54,23 +54,25 @@ const ProjectsPage = () => {
       desc: 'Shield Code is a modern random password generator, that helps in generating secure and reliable passwords that users can create and copy for future reference.',
       hostedLink: 'https://shieldcode.netlify.app/',
       githubLink: 'https://github.com/shaileshrawat3321/shieldcode'
+    },
+    {
+      id: 5,
+      title: 'todox',
+      img: todoX,
+      techStack: 'Reactjs, props, Boostrap for styling',
+      desc: 'TodoX is a Todo application for managing day-to-day todos efficiently.',
+      hostedLink: 'https://todox-todos.netlify.app/',
+      githubLink: 'https://github.com/shaileshrawat3321/todoX'
     }
   ]
 
   const upcomingProjects = [
     {
       id: 0,
-      title: 'TodX',
-      img: todX,
-      techStack: "Reactjs, Redux Toolkit for state management, Tailwind for styling and much more.",
-      desc: "Todos are very important part of our daily life it helps us in better management of daily tasks.TodX is a todo application in which user can add, edit and delete his daily todos.",
-    },
-    {
-      id: 1,
-      title: "Ottomatic store",
+      title: "Otto Store",
       img: ottoMatic,
       techStack: "Reactjs, Redux Toolkit for state management, Tailwind for styling and much more.",
-      desc: "Online Shopping nowadays become very efficient for purchasing goods and services. Ottomatic store as name suggests is a online e-commerce web application in which user can register and can do shopping.",
+      desc: "Otto store is a e-commerce web application in which user can buy clothes and electronics goods.",
     }
   ]
 
