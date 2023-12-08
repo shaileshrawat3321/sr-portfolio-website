@@ -39,7 +39,7 @@ const SkillsPage = () => {
         {
             id: 7,
             tech: "git",
-            lvl: "intermediate"
+            lvl: "beginner"
         },
         {
             id: 8,
